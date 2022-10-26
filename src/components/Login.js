@@ -1,8 +1,7 @@
 import './login.css';
 
 
-
-const Login = () => {
+function Login() {
 
     return (
       <div className="App">
@@ -53,15 +52,28 @@ const Login = () => {
   
           <div className="login-button">
             <a href='#'>
-          <button className="form-login__button" type="button" name="로그인" >Login
+          <button 
+          className="form-login__button" 
+          type="submit" 
+          value="Login" >Login
+
           <div className="login-icon"></div></button> </a>
-          </div>
+          </div> <br></br>
   
-          <div className="form-login__register">
-          <div className='form-login__register-p'>  <p> 도움이 필요하세요? </p> </div> <p className='form-login__register-p1'>|</p> 
-            <div className='form-login__register-a'> <a href='#'>회원가입</a> </div> <p className='form-login__register-p2'>|</p> 
-            <div className="form-login__password-find"> <a href='#'>비밀번호 찾기</a> </div> <p className='form-login__register-p3'>|</p> 
-            <div className="form-login__id-find"> <a href='#'>아이디 찾기</a> </div>
+          <div className="form-login__register"> 
+          <div className='form-login__register-p'>  
+          <p className='form-login__register-p'> 도움이 필요하세요? </p> 
+          </div> <p className='form-login__register-p1'>|</p> 
+            <div className='form-login__register-a'> 
+            <a href='#'>회원가입</a> 
+            </div> 
+            <p className='form-login__register-p2'>|</p> 
+            <div className="form-login__password-find"> 
+            <a href='#'>비밀번호 찾기</a> </div> 
+            <p className='form-login__register-p3'>|</p> 
+            <div className="form-login__id-find"> 
+            <a href='#'>아이디 찾기</a>
+             </div>
           </div>
   
         </form>
