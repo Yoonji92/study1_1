@@ -12,7 +12,7 @@
   button,
   input,
   select {
-    background-color: #f5f6f7;
+    background-color: #ffffff;
     font-family: Helvetica, Dotum, sans-serif;
     font-size: 12px;
   }
@@ -150,8 +150,8 @@
 
 
   input:focus {
-    outline: 2px solid rgba(95, 95, 254, 0.307);
-    border-radius: 5px
+    outline: 1.5px solid rgba(38, 0, 255, 0.351);
+    border-radius: 5px;
   } 
   
   
