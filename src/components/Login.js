@@ -3,6 +3,8 @@ import './login.css';
 
 function Login() {
 
+
+
     return (
       <div className="App">
       <body>
@@ -12,8 +14,8 @@ function Login() {
                   <select name="language" id="language" class="header__lang-select-list">
                       <option value="ko_KR">한국어</option>
                       <option value="en_US">English</option>
-                      <option value="zh-Hans_CN">中文(简体)</option>
-                      <option value="zh-Hant_TW">中文(台灣)</option>
+                      {/* <option value="zh-Hans_CN">中文(简体)</option>
+                      <option value="zh-Hant_TW">中文(台灣)</option> */}
                   </select>
               </div>
               </header>
@@ -27,16 +29,28 @@ function Login() {
           </p>
           <legend>로그인 폼</legend>
           <div class="form-login__id-container">
-          <label className="form-login__id-label"> 아이디 </label>
-          <input className="form-login__id-input" type="text" name="email" />
+          <label className="form-login__id-label" > 아이디 </label>
+          <input className="form-login__id-input" type="text" name="email" 
+          placeholder='abc@gmail.com' autoFocus />
+
+          
           <div class="error form-login__id-error-message" aria-live="assertive">아이디를 입력해주세요.</div>
           </div>
   
           <div class="form-login__password-container">
           <div className="input-password-find">
-            <label className="form-login__password-label">비밀번호 </label>
+            <label className="form-login__password-label" >비밀번호 </label>
           </div>
-          <input className="form-login__password-input" type="text" name="password" />
+          <input 
+          className="form-login__password-input" 
+          type="password" 
+          name="password" 
+           placeholder='********' autoFocus 
+                    required
+                    minLength={8}
+                    maxLength={12}
+                    autocomplete="false"
+                    />
           <div class="error form-login__password-error-message">비밀번호를 입력해주세요.</div>
           </div>
   

@@ -4,6 +4,7 @@
   }
 
 .notfound-container {
+  padding-top: 20px;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
@@ -25,8 +26,9 @@
 
 
 .notfound-h2 {
+  margin-top: 20px;
     width: 100%;
-    font-size: 24px;
+    font-size: 34px;
     position: absolute;
     justify-content: center;
     top: 0px;
@@ -34,8 +36,9 @@
 
 
 .notfound-p{
+  margin-top: 8px;
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     position: absolute;
     justify-content: center;
     top: 40px;
@@ -43,6 +46,7 @@
 
 
 .notfound-button {
+  margin-top: 10px;
     background-color: #5500ff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -50,13 +54,17 @@
     width: 120px;
     height: 40px;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 24px;
     font-family: Spoqa Han Sans Neo;
     font-style: normal;
     border-radius : 30px;
     cursor: pointer;
+}
+
+.notfound-link{
+  color: #FFFFFF;
 }
 
 
@@ -70,4 +78,37 @@
 
   .notfound-button:disabled {
     background: #ccc;
+  }
+
+
+
+
+
+  /* For below 768px screen width(모바일 대응) */
+  
+  @media screen and (max-width: 768px) {
+
+    .notfound-container {
+      padding-top: 60px;
+    }
+
+    .notfound-button {
+        width: 84px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .notfound-h2 {
+      margin-top: 30px;
+      font-size: 20px;
+
+    }
+
+    .notfound-p {
+      font-size: 13px;
+
+    } 
+
+ 
+  
   }
